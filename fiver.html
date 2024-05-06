@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gudrid – Exploring the Guardian</title>
+
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+        height: 100dvh;
+        color-scheme: only dark;
+        display: grid;
+        font-family: system-ui, sans-serif;
+        background-color: Canvas;
+        color: CanvasText;
+        grid-template-rows: 6rem calc(100dvh - 6rem);
+      }
+
+      header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+      }
+
+      button:disabled {
+        opacity: 0;
+      }
+    </style>
+
+    <script type="module" src="./fiver.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1><a href="./">Gudrid</a></h1>
+      <label
+        >API key: <input type="text" name="api-key" value="test" />
+        <a href="https://bonobo.capi.gutools.co.uk/">(get one)</a>
+      </label>
+    </header>
+
+    <main>
+      <ul id="fiver"></ul>
+      <button id="more">more</button>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>

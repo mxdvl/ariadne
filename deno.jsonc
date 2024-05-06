@@ -2,7 +2,7 @@
   "tasks": {
     "dev": "./scripts/dev.sh",
     "format": "deno fmt",
-    "types": "deno check *.js",
+    "types": "deno check *.js"
   },
   "compilerOptions": {
     "checkJs": true,
